@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Monitoramento Inteligente de Ambiente</h1>
+    </header>
+    <div class="container">
+        <div class="dashboard">
+            <div class="card">
+                <h2>Temperatura</h2>
+                <div class="sensor-value" id="temperature">--°C</div>
+                <canvas id="temperatureChart"></canvas>
+            </div>
+            <div class="card">
+                <h2>Umidade</h2>
+                <div class="sensor-value" id="humidity">--%</div>
+                <canvas id="humidityChart"></canvas>
+            </div>
+            <div class="card">
+                <h2>Qualidade do Ar</h2>
+                <div class="sensor-value" id="airQuality">--</div>
+                <canvas id="airQualityChart"></canvas>
+            </div>
+            <div class="card">
+                <h2>Nível de Ruído</h2>
+                <div class="sensor-value" id="noiseLevel">-- dB</div>
+                <canvas id="noiseLevelChart"></canvas>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Localização dos Sensores</h2>
+            <div id="map"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
